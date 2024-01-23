@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="C:/workspace/pumo/esp_web/web_esp/style.css">
+</head>
+<body>
+
+<h1>Stock Maintanence</h1> <hr>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Rack No</th>
+            <th>Material</th>
+            <th>Grade</th>
+            <th>Length</th>
+            <th>Width</th>
+            <th>Thickness</th>
+            <th>Qty</th>
+        </tr>
+        <tr>
+<form action="/add_newitem" method="post">
+    <td><input type="text" name ="input_1" id="input1" placeholder="Input 1"></td>
+    <td><input type="text" name ="input_2" id="input2" placeholder="Input 2"></td>
+    <td><input type="text" name ="input_3" id="input3" placeholder="Input 3"></td>
+    <td><input type="text" name ="input_4" id="input4" placeholder="Input 4"></td>
+    <td><input type="text" name ="input_5" id="input5" placeholder="Input 5"></td>
+    <td><input type="text" name ="input_6" id="input6" placeholder="Input 6"></td>
+    <td><input type="text" name ="input_7" id="input7" placeholder="Input 7"></td>
+    <td><input type="text" name ="input_8" id="input8" placeholder="Input 8"></td>
+
+</tr>
+</table>
+<table class="center" border="0"><tr><td><button  type="submit">Add New</button></td></tr></table>
+</form>
+<table class="center">
+    <tr>
+        <td style="border-style: none;"> </td>
+        <td style="background-color: green;">Id</td>
+        <td style="background-color: green;">Oty-In</td>
+    </tr>
+<tr> 
+    <form action="/add" method="post">
+    <td style="border-style: none;"><button>ADD</button></td>
+    <td><input type="text" name="add_id" id=""> </td>
+    <td><input type="number" name="add_qt" id=""> </td>
+    </form>
+</tr>
+<tr>
+    <td style="border-style: none;"> </td>
+    <td style="background-color: red;">Id</td>
+    <td style="background-color: red;">Oty-Out</td>
+</tr>
+<tr> 
+    <form action="/remove" method="post">
+    <td style="border-style: none;" ><button>REMOVE</button></td>
+    <td><input type="text" name="rm_id" id=""> </td>
+    <td><input type="number" name="rm_qt" id=""> </td>
+    </form>
+</table>
+<br>
+
+<h2 style="text-align: center;">Stock Table</h2> <hr>
+
+<table id="myTable" style="display: block;max-height: 300px; overflow-y: scroll;">
+  <tr>
+    <th>S.No</th>
+    <th>ID</th>
+    <th>Rack No</th>
+    <th>Material</th>
+    <th>Grade</th>
+    <th>Length</th>
+    <th>Width</th>
+    <th>Thickness</th>
+    <th>Qty</th>
+    <th>Button</th>
+  </tr>
+  table_1
+</table>
+
+</body>
+</html>
